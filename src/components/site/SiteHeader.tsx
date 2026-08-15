@@ -25,16 +25,17 @@ export function SiteHeader() {
           : "bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-[1240px] items-center justify-between px-5 md:px-8">
+      <div className="mx-auto flex h-24 max-w-[1420px] items-center justify-between px-5 md:px-8">
+        
         <a
           href="#topo"
-          className="flex items-center gap-3"
           aria-label="Eduardo Vidal — início"
+          className="flex items-center rounded-md bg-white px-3 py-2 shadow-sm"
         >
           <img
             src={logo}
             alt="Eduardo Vidal 2023"
-            className="h-12 w-auto max-w-[200px] object-contain md:h-14 md:max-w-[240px]"
+            className="h-14 w-auto max-w-[180px] object-contain md:h-16 md:max-w-[220px]"
           />
         </a>
 
