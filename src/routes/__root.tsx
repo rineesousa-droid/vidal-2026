@@ -77,21 +77,34 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Eduardo Vidal 2023 — Deputado Federal por São Paulo" },
+      {
+        name: "description",
+        content:
+          "Eduardo Vidal, candidato a Deputado Federal por São Paulo em 2026. Trabalho antes do mandato: articulação, resultados e compromisso com a população.",
+      },
+      { name: "author", content: "Eduardo Vidal" },
+      { property: "og:title", content: "Eduardo Vidal 2023 — Deputado Federal por São Paulo" },
+      {
+        property: "og:description",
+        content: "Trabalho antes do mandato. Conheça a história, as bandeiras e os resultados de Eduardo Vidal.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -102,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
