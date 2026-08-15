@@ -3,11 +3,16 @@
 ## Objetivo desta etapa
 Entregar a **Home completa**, com acabamento visual de agência, identidade própria e todos os blocos narrativos. Páginas internas ficam para a etapa seguinte, com rotas já previstas na navegação.
 
-## Fotografias
-Vou tentar ler a pasta do Drive assim que o link público for reenviado. Se o download automático não for possível (é comum o Drive bloquear), a Home é construída com **slots de imagem nomeados** — `hero`, `quem-e`, `causa-2019`, `resultados`, `territorio`, `familia`, `galeria-01..08`, `cta-final` — cada um em um arquivo único de configuração. Ao enviar as fotos, basta soltá-las nesses slots e o site inteiro se atualiza sem mexer no layout. Nenhuma imagem artificial do Eduardo e nenhum banco de imagens com pessoas será usado; onde faltar foto, uso composição tipográfica e blocos de cor da marca, não stock.
+## Materiais oficiais (já acessados no Drive)
+Consegui abrir a pasta pela conexão do Google Drive. Ela contém exatamente três arquivos:
 
-## Identidade visual
-Base azul institucional (#0f1b3d, #1e3a5f, #3b6fa0, #e8edf3), com um acento quente reservado para números e CTAs. Quando a logomarca oficial chegar, ajusto a paleta para bater exatamente com ela — a logo não será redesenhada. Duas famílias tipográficas: uma display com personalidade para títulos, uma sans altamente legível para texto. Tokens semânticos definidos em `src/styles.css` (primary, secondary, accent, background, surface, text primary/secondary, border, radius, sombras), sem cores fixas nos componentes.
+- Logomarca oficial vetorizada (PNG 3886x2711 e .ai) — azul-marinho e azul royal, filetes verde e amarelo, tipografia itálica condensada e o bloco **2023** em destaque.
+- Uma única fotografia: retrato de estúdio em fundo branco, corpo 3/4, terno escuro, sorriso aberto, 4016x6016.
+
+Consequência prática: hoje existe **uma** foto. Ela será o retrato principal do Hero, com recorte do fundo branco e integração ao background da marca. Não vou repetir a mesma imagem em várias seções — isso empobreceria o site. As demais seções que pedem fotografia (atuação política, Congresso, pessoas, São Paulo e Jundiaí, família, galeria, CTA final) ficam com **slots nomeados** já posicionados: `quem-e`, `causa-2019`, `resultados`, `territorio`, `familia`, `galeria-01..08`, `cta-final`, todos listados em um único arquivo de configuração. Enquanto vazios, essas seções renderizam em versão tipográfica e gráfica da marca — sem banco de imagens e sem imagem artificial do Eduardo. Basta subir as fotos nesses slots depois e o layout se completa sem retrabalho. Recomendo enviar mais fotos para a Home ficar realmente fotográfica.
+
+## Identidade visual (extraída da logo)
+Paleta derivada da própria logomarca: azul-marinho profundo como cor primária, azul royal como secundária, verde e amarelo apenas como acentos finos (filetes, sublinhados, destaque do número), off-white e cinza-azulado para superfícies e texto secundário. A logo não será redesenhada, apenas aplicada em versão cheia e reduzida, e o favicon sai dela. Duas famílias tipográficas: uma display condensada/itálica que conversa com a logo para títulos e para o número 2023, e uma sans neutra e muito legível para texto. Tudo em tokens semânticos no `src/styles.css` (primary, secondary, accent, background, surface, texto primário/secundário, borda, raio, sombras), sem cores fixas nos componentes.
 
 ## Direção de layout
 Editorial contemporâneo, muito respiro, fotografia grande, ritmo alternado entre seções claras, seções escuras e seções abertas sem card. Nada de grade de cards repetida do topo ao rodapé. Cada seção tem intenção visual própria.
