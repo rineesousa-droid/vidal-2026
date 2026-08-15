@@ -11,19 +11,31 @@ export function SiteHeader() {
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
+
     window.addEventListener("scroll", onScroll, { passive: true });
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled || open ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-navy/20" : "bg-transparent"
+        scrolled || open
+          ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-navy/20"
+          : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-[1240px] items-center justify-between px-5 md:px-8">
-        <a href="#topo" className="flex items-center gap-3" aria-label="Eduardo Vidal — início">
-          <img src={logo} alt="Eduardo Vidal 2023" className="h-9 w-auto brightness-0 invert md:h-10" />
+        <a
+          href="#topo"
+          className="flex items-center gap-3"
+          aria-label="Eduardo Vidal — início"
+        >
+          <img
+            src={logo}
+            alt="Eduardo Vidal 2023"
+            className="h-12 w-auto max-w-[200px] object-contain md:h-14 md:max-w-[240px]"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex">
@@ -36,6 +48,7 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
+
           <a
             href="#participe"
             className="rounded-sm bg-brand-yellow px-5 py-2.5 font-display text-sm font-bold tracking-wide text-navy transition-transform hover:-translate-y-0.5"
@@ -67,6 +80,7 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
+
           <a
             href="#participe"
             onClick={() => setOpen(false)}
