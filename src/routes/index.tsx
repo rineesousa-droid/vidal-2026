@@ -1,24 +1,79 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { Hero } from "@/components/site/Hero";
+import { Stats } from "@/components/site/Stats";
+import { About } from "@/components/site/About";
+import { Pillars } from "@/components/site/Pillars";
+import { Timeline } from "@/components/site/Timeline";
+import { Results } from "@/components/site/Results";
+import { Manifesto } from "@/components/site/Manifesto";
+import { Faq } from "@/components/site/Faq";
+import { Participate } from "@/components/site/Participate";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { useReveal } from "@/hooks/useReveal";
+import { faq } from "@/content/eduardo";
+
+const title = "Eduardo Vidal 2023 — Deputado Federal por São Paulo";
+const description =
+  "Trabalho antes do mandato: conheça a história, as bandeiras e os resultados de Eduardo Vidal, candidato a Deputado Federal por São Paulo em 2026.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Person",
+              name: "Eduardo Vidal",
+              jobTitle: "Candidato a Deputado Federal por São Paulo",
+              description,
+            },
+            {
+              "@type": "FAQPage",
+              mainEntity: faq.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            },
+          ],
+        }),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
+  useReveal();
+
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <Stats />
+        <About />
+        <Pillars />
+        <Timeline />
+        <Results />
+        <Manifesto />
+        <Faq />
+        <Participate />
+      </main>
+      <SiteFooter />
     </div>
   );
 }
