@@ -6,133 +6,192 @@ export const candidate = {
   election: "Eleições 2026",
   concept: "Trabalho antes do mandato",
   lead:
-    "Há mais de uma década Eduardo Vidal resolve problemas públicos sem precisar de cargo: articulando com prefeituras, secretarias, entidades e lideranças comunitárias para transformar demanda de gente real em decisão de governo.",
+    "Empresário, cientista político e ativista. Há anos Eduardo Vidal transforma problemas reais em articulação política e propostas. Agora quer ampliar esse trabalho na Câmara dos Deputados.",
+};
+
+export const socials = {
+  whatsapp:
+    "https://wa.me/5511965701489?text=Ol%C3%A1%21%20Vim%20pelo%20site%20do%20Eduardo%20Vidal%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.",
+  instagram: "",
 };
 
 export const stats = [
-  { value: "12+", label: "anos de atuação pública", note: "Articulação institucional e social em São Paulo" },
-  { value: "60+", label: "municípios acompanhados", note: "Interior, litoral e Região Metropolitana" },
-  { value: "R$ 180 mi", label: "em recursos articulados", note: "Saúde, educação, infraestrutura e esporte" },
-  { value: "300+", label: "lideranças em rede", note: "Coletivos, associações e conselhos municipais" },
+  {
+    value: "20 anos",
+    label: "de experiência profissional",
+    note: "Gestão, operações e experiência do cliente",
+  },
+  {
+    value: "4",
+    label: "propostas",
+    note: "Com participação na elaboração e apresentadas no Congresso Nacional",
+  },
+  {
+    value: "+73%",
+    label: "de crescimento na votação",
+    note: "Na capital paulista em 2024, em relação a 2022",
+  },
+  {
+    value: "Desde 2019",
+    label: "em mobilização nacional",
+    note: "Pelos direitos das pessoas com restrições alimentares",
+  },
 ];
 
 export const pillars = [
   {
-    title: "Saúde que chega perto",
+    title: "Alimentos sem glúten mais acessíveis",
     summary:
-      "Fila menor começa na atenção básica. Ampliar equipes de saúde da família, regular consultas e exames por região e destravar obras paradas de UBS e hospitais.",
+      "Defesa da redução dos impostos sobre alimentos sem glúten, ampliando o acesso para pessoas que dependem desses produtos diariamente.",
     tag: "Saúde",
   },
   {
-    title: "Educação com futuro",
+    title: "Alimentação segura",
     summary:
-      "Escola em tempo integral, formação técnica conectada ao mercado local e conectividade real em sala de aula, começando pelas escolas mais vulneráveis.",
-    tag: "Educação",
+      "Mais segurança alimentar para pessoas com doença celíaca e outras restrições alimentares em hospitais, escolas e espaços públicos.",
+    tag: "Inclusão",
   },
   {
-    title: "Emprego e renda",
+    title: "Diagnóstico precoce",
     summary:
-      "Crédito descomplicado para o pequeno negócio, qualificação profissional gratuita e apoio ao empreendedor da periferia, que gera a maior parte dos empregos.",
+      "Ampliar a atenção ao diagnóstico de condições relacionadas às restrições alimentares e melhorar o acesso à informação.",
+    tag: "Saúde",
+  },
+  {
+    title: "Rotulagem mais clara",
+    summary:
+      "Melhorar as informações disponíveis nos rótulos para aumentar a segurança de quem possui restrições alimentares.",
+    tag: "Consumidor",
+  },
+  {
+    title: "Empreendedorismo",
+    summary:
+      "Valorizar quem empreende, gera oportunidades, cria negócios e movimenta a economia brasileira.",
     tag: "Economia",
   },
   {
-    title: "Segurança com inteligência",
+    title: "Inclusão nas políticas públicas",
     summary:
-      "Integração de dados entre municípios e Estado, videomonitoramento com uso responsável e políticas de prevenção para adolescentes fora da escola.",
-    tag: "Segurança",
-  },
-  {
-    title: "Cidade que funciona",
-    summary:
-      "Mobilidade, saneamento e drenagem: obras que evitam tragédia anunciada. Planejamento de bacia, não de mandato.",
-    tag: "Infraestrutura",
-  },
-  {
-    title: "Gestão pública honesta",
-    summary:
-      "Transparência ativa de emendas, prestação de contas trimestral e agenda pública aberta. Quem representa deve poder ser fiscalizado a qualquer hora.",
-    tag: "Transparência",
+      "Garantir que pessoas que muitas vezes ficam fora das prioridades do poder público sejam consideradas na construção das políticas públicas.",
+    tag: "Inclusão",
   },
 ];
 
 export const timeline = [
   {
-    year: "2012",
-    title: "O começo na base",
-    text: "Começa a atuar em associações de bairro e conselhos municipais, acompanhando demandas de saúde e educação em comunidades da Grande São Paulo.",
+    year: "Ceará",
+    title: "As origens",
+    text:
+      "Eduardo Vidal é cearense e construiu sua trajetória profissional em São Paulo, onde vive há mais de 15 anos.",
   },
   {
-    year: "2015",
-    title: "Articulação institucional",
-    text: "Passa a intermediar projetos entre prefeituras e órgãos estaduais e federais, aprendendo na prática o caminho do recurso público até a obra entregue.",
+    year: "20 anos",
+    title: "Experiência profissional",
+    text:
+      "Empreendedor, acumula cerca de 20 anos de experiência nas áreas de gestão, operações e experiência do cliente, tendo participado da criação e desenvolvimento de negócios em diferentes setores.",
   },
   {
-    year: "2018",
-    title: "Rede no interior",
-    text: "Amplia a atuação para o interior paulista, apoiando pequenos municípios na elaboração de projetos técnicos e na captação de emendas.",
+    year: "Formação",
+    title: "Ciência Política",
+    text:
+      "Eduardo é bacharel em Ciência Política, formado pelo RenovaBR e Embaixador Politize!.",
   },
   {
-    year: "2021",
-    title: "Resposta na crise",
-    text: "Coordena mutirões de apoio a famílias e a serviços de saúde durante a pandemia, conectando doações, empresas e poder público.",
+    year: "2019",
+    title: "Uma causa virou mobilização",
+    text:
+      "Inicia uma mobilização nacional pelos direitos das pessoas com doença celíaca e outras restrições alimentares.",
+  },
+  {
+    year: "Congresso",
+    title: "Da mobilização às propostas",
+    text:
+      "Passa a frequentar o Congresso Nacional, dialogar com parlamentares de diferentes partidos e transformar demandas da comunidade em propostas legislativas.",
+  },
+  {
+    year: "2022",
+    title: "Primeira candidatura",
+    text:
+      "Eduardo Vidal disputa sua primeira eleição para Deputado Federal por São Paulo.",
   },
   {
     year: "2024",
-    title: "Agenda estruturante",
-    text: "Concentra o trabalho em pautas de longo prazo: saneamento, escola integral, qualificação profissional e transparência de emendas.",
+    title: "Candidatura em São Paulo",
+    text:
+      "Candidato a vereador na cidade de São Paulo, aumenta em 73% sua votação na capital em relação a 2022, mesmo sem mandato ou estrutura política tradicional.",
   },
   {
     year: "2026",
-    title: "Candidatura a Deputado Federal",
-    text: "Leva para Brasília um método já testado: escutar o território, montar o projeto e cobrar até a entrega. Candidato pelo número 2023.",
+    title: "Candidato a Deputado Federal",
+    text:
+      "Eduardo Vidal é candidato a Deputado Federal por São Paulo, número 2023, ampliando sua atuação também para Jundiaí e região.",
   },
 ];
 
 export const results = [
   {
-    title: "Obras destravadas",
-    text: "Unidades de saúde e creches com obra parada retomadas após articulação técnica entre município, Estado e União.",
+    title: "4 propostas no Congresso",
+    text:
+      "Eduardo participou da elaboração de quatro propostas apresentadas no Congresso Nacional.",
   },
   {
-    title: "Projetos aprovados",
-    text: "Apoio na elaboração de projetos que viabilizaram recursos para pavimentação, drenagem e reforma de escolas.",
+    title: "Articulação de projetos",
+    text:
+      "Também participou da articulação de diversos outros projetos relacionados às demandas das pessoas com doença celíaca e outras restrições alimentares.",
   },
   {
-    title: "Equipamentos entregues",
-    text: "Ambulâncias, equipamentos hospitalares e materiais escolares destinados a municípios com menor capacidade de captação.",
+    title: "Propostas voltaram a avançar",
+    text:
+      "Sua atuação ajudou a movimentar propostas que permaneceram durante anos sem avanço no Congresso.",
   },
   {
-    title: "Formação de gestores",
-    text: "Encontros com secretários e técnicos municipais sobre captação de recursos, prestação de contas e planejamento plurianual.",
+    title: "Diálogo político",
+    text:
+      "Construiu diálogo com parlamentares de diferentes partidos para transformar demandas reais da comunidade em propostas concretas.",
   },
 ];
 
 export const principles = [
-  "Escutar antes de prometer.",
-  "Transformar demanda em projeto técnico.",
-  "Cobrar até a entrega — e prestar contas do que não saiu.",
+  "Trabalho para transformar problemas reais em soluções.",
+  "Presença para ouvir as pessoas e conhecer de perto suas necessidades.",
+  "Fiscalização e resultado para transformar boas ideias em políticas públicas.",
 ];
 
 export const faq = [
   {
+    q: "Quem é Eduardo Vidal?",
+    a:
+      "Eduardo Vidal é empresário, cientista político e ativista pela inclusão de pessoas com restrições alimentares. Cearense, vive em São Paulo há mais de 15 anos e mantém forte relação com Jundiaí.",
+  },
+  {
     q: "Eduardo Vidal já ocupou cargo eletivo?",
-    a: "Não. Toda a atuação pública dele foi construída fora do mandato, por meio de articulação institucional, trabalho com lideranças locais e apoio técnico a prefeituras e entidades. É exatamente essa experiência que ele leva para a Câmara dos Deputados.",
+    a:
+      "Não. Eduardo ainda não exerceu mandato eletivo. Sua atuação pública foi construída por meio de mobilização social, diálogo com parlamentares e participação na elaboração e articulação de propostas.",
   },
   {
-    q: "Qual é o número para votar em 2026?",
-    a: "O número é 2023. Nas eleições para Deputado Federal, o eleitor digita 2023 na urna, confere o nome e a foto de Eduardo Vidal e confirma o voto.",
+    q: "O que Eduardo já fez no Congresso Nacional?",
+    a:
+      "Eduardo participou da elaboração de quatro propostas apresentadas no Congresso Nacional e da articulação de diversos outros projetos, especialmente relacionados às pessoas com doença celíaca e outras restrições alimentares.",
   },
   {
-    q: "Quais são as prioridades da candidatura?",
-    a: "Saúde com acesso rápido na atenção básica, educação em tempo integral e formação técnica, geração de emprego e renda, segurança com inteligência, infraestrutura urbana e transparência total das emendas.",
+    q: "Quais são as principais bandeiras de Eduardo Vidal?",
+    a:
+      "Entre suas principais bandeiras estão a redução dos impostos sobre alimentos sem glúten, alimentação segura em hospitais e escolas, diagnóstico precoce, melhoria da rotulagem, inclusão nas políticas públicas, além de atenção à saúde, educação e empreendedorismo.",
   },
   {
-    q: "Como a atuação em São Paulo se traduz em mandato federal?",
-    a: "O deputado federal decide sobre orçamento, legislação e destino de emendas. Quem já conhece o caminho do recurso público, do projeto técnico à obra entregue, faz esse trabalho render mais para os municípios paulistas.",
+    q: "Qual é o número de Eduardo Vidal para Deputado Federal?",
+    a:
+      "Eduardo Vidal é candidato a Deputado Federal por São Paulo com o número 2023.",
   },
   {
-    q: "Como acompanhar e participar da campanha?",
-    a: "Acompanhe as redes oficiais, participe das agendas públicas nos municípios e envie a demanda da sua comunidade. Toda sugestão recebida é organizada por tema e território.",
+    q: "Por que Eduardo quer ser Deputado Federal?",
+    a:
+      "Depois de anos acompanhando o Congresso Nacional e participando da construção e articulação de propostas, Eduardo quer ampliar sua capacidade de atuação por meio de um mandato baseado em trabalho, presença, fiscalização e resultados concretos.",
+  },
+  {
+    q: "Como falar com a equipe de Eduardo?",
+    a:
+      "Você pode entrar em contato pelo WhatsApp oficial disponível no site e acompanhar os canais oficiais de Eduardo Vidal.",
   },
 ];
 
