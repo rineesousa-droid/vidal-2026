@@ -33,8 +33,8 @@ export function ActionGallery() {
           {actionPhotos.map((photo, i) => (
             <figure
               key={photo.src}
-              className={`reveal group relative overflow-hidden bg-white/5 ${
-                i === 0 ? "sm:col-span-2 sm:aspect-auto" : ""
+              className={`reveal group relative aspect-square overflow-hidden bg-white/5 ${
+                i === 0 ? "sm:col-span-2 sm:aspect-video" : ""
               }`}
               style={{ transitionDelay: `${i * 90}ms` }}
             >
