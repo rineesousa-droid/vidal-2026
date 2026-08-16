@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "@/assets/logo-cabecalho-eduardo-v2.png";
+import logo from "@/assets/logo-eduardo-vidal-horizontal.png";
 import { nav } from "@/content/eduardo";
 
 export function SiteHeader() {
@@ -10,33 +10,37 @@ export function SiteHeader() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
+
     onScroll();
 
     window.addEventListener("scroll", onScroll, { passive: true });
 
-    return () => window.removeEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || open
           ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-navy/20"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-24 max-w-[1420px] items-center justify-between px-5 md:px-8">
-        
         <a
           href="#topo"
           aria-label="Eduardo Vidal — início"
-          className="flex items-center transition-opacity hover:opacity-85"
+          className="flex items-center transition-opacity hover:opacity-90"
         >
           <img
             src={logo}
             alt="Eduardo Vidal 2023"
             className={`w-auto object-contain transition-all duration-300 ${
-              scrolled ? "h-11 md:h-12" : "h-14 md:h-16"
+              scrolled
+                ? "h-10 max-w-[260px] md:h-12 md:max-w-[320px]"
+                : "h-12 max-w-[300px] md:h-14 md:max-w-[380px]"
             }`}
           />
         </a>
@@ -62,7 +66,7 @@ export function SiteHeader() {
 
         <button
           type="button"
-          onClick={() => setOpen((v) => !v)}
+          onClick={() => setOpen((value) => !value)}
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
           className="text-white lg:hidden"
