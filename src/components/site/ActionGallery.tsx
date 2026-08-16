@@ -34,7 +34,7 @@ export function ActionGallery() {
             <figure
               key={photo.src}
               className={`reveal group relative overflow-hidden bg-white/5 ${
-                i === 0 ? "lg:col-span-2 lg:row-span-2" : ""
+                i === 0 ? "sm:col-span-2" : ""
               }`}
               style={{ transitionDelay: `${i * 90}ms` }}
             >
@@ -42,11 +42,11 @@ export function ActionGallery() {
                 src={images[photo.src]}
                 alt={photo.caption}
                 loading="lazy"
-                className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
-                  i === 0 ? "h-full min-h-[320px] lg:min-h-[560px]" : "h-[260px] lg:h-[270px]"
+                className={`w-full object-cover object-top transition-transform duration-700 group-hover:scale-105 ${
+                  i === 0 ? "h-[340px] lg:h-[420px]" : "h-[340px] lg:h-[420px]"
                 }`}
               />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/70 to-transparent p-5 pt-14 text-sm leading-snug text-white/85">
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/70 to-transparent p-5 pt-16 text-sm leading-snug text-white/85">
                 {photo.caption}
               </figcaption>
             </figure>
