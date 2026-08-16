@@ -5,6 +5,8 @@ import { Hero } from "@/components/site/Hero";
 import { Stats } from "@/components/site/Stats";
 import { About } from "@/components/site/About";
 import { Pillars } from "@/components/site/Pillars";
+import { Territory } from "@/components/site/Territory";
+import { ActionGallery } from "@/components/site/ActionGallery";
 import { Timeline } from "@/components/site/Timeline";
 import { Results } from "@/components/site/Results";
 import { Manifesto } from "@/components/site/Manifesto";
@@ -67,6 +69,8 @@ function Index() {
         <Stats />
         <About />
         <Pillars />
+        <Territory />
+        <ActionGallery />
         <Timeline />
         <Results />
         <Manifesto />
