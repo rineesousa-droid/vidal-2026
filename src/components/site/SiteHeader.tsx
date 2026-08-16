@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "@/assets/logo-eduardo-vidal-horizontal.png";
+import logo from "@/assets/logo-cabecalho-eduardo-v2.png";
 import { nav } from "@/content/eduardo";
 
 export function SiteHeader() {
