@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "@/assets/logo-eduardo-vidal.png";
+import logo from "@/assets/logo-eduardo-vidal-branca.png";
 import { nav } from "@/content/eduardo";
 
 export function SiteHeader() {
@@ -30,12 +30,14 @@ export function SiteHeader() {
         <a
           href="#topo"
           aria-label="Eduardo Vidal — início"
-          className="flex items-center rounded-md bg-white px-3 py-2 shadow-sm"
+          className="flex items-center transition-opacity hover:opacity-85"
         >
           <img
             src={logo}
             alt="Eduardo Vidal 2023"
-            className="h-14 w-auto max-w-[180px] object-contain md:h-16 md:max-w-[220px]"
+            className={`w-auto object-contain transition-all duration-300 ${
+              scrolled ? "h-11 md:h-12" : "h-14 md:h-16"
+            }`}
           />
         </a>
 

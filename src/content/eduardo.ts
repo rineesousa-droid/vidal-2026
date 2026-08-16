@@ -198,7 +198,85 @@ export const faq = [
 export const nav = [
   { label: "Quem é", href: "#quem-e" },
   { label: "Bandeiras", href: "#bandeiras" },
+  { label: "Território", href: "#territorio" },
+  { label: "Atuação", href: "#atuacao" },
   { label: "Trajetória", href: "#trajetoria" },
   { label: "Resultados", href: "#resultados" },
   { label: "Dúvidas", href: "#faq" },
+];
+
+export const territory = {
+  eyebrow: "Onde ele trabalha",
+  title: "São Paulo e Jundiaí: o território que ele conhece de perto.",
+  lead:
+    "Cearense de origem, Eduardo Vidal vive em São Paulo há mais de 15 anos. É na capital paulista que construiu sua vida profissional, sua atuação como ativista e a rede de diálogo que hoje sustenta seu trabalho político. Em 2026, amplia essa atuação também para Jundiaí e região.",
+  places: [
+    {
+      name: "São Paulo",
+      role: "Capital",
+      text:
+        "Base da atuação de Eduardo há mais de 15 anos. Foi na capital que ele começou a mobilização pelos direitos das pessoas com restrições alimentares, dialogou com associações, profissionais de saúde e comerciantes, e levou essas demandas ao debate público.",
+      facts: [
+        "Crescimento de 73% na votação em 2024, em relação a 2022",
+        "Resultado alcançado sem mandato e sem estrutura política tradicional",
+        "Rede de apoio construída bairro a bairro, na conversa direta",
+      ],
+    },
+    {
+      name: "Jundiaí e região",
+      role: "Interior paulista",
+      text:
+        "Eduardo mantém forte relação com Jundiaí e com as cidades do entorno. Em 2026, a candidatura a Deputado Federal amplia formalmente sua atuação para a região, levando a mesma agenda de saúde, inclusão e empreendedorismo ao interior.",
+      facts: [
+        "Agenda regional em construção junto a lideranças locais",
+        "Foco em saúde, educação e apoio a quem empreende",
+        "Escuta permanente das demandas do interior paulista",
+      ],
+    },
+  ],
+  done: [
+    {
+      title: "Levou uma pauta de São Paulo para Brasília",
+      text:
+        "A mobilização iniciada em 2019, a partir do contato direto com famílias em São Paulo, chegou ao Congresso Nacional e virou proposta legislativa.",
+    },
+    {
+      title: "Participou da elaboração de 4 propostas",
+      text:
+        "Quatro propostas apresentadas no Congresso Nacional contaram com a participação de Eduardo em sua elaboração, além da articulação de diversos outros projetos.",
+    },
+    {
+      title: "Destravou pautas paradas há anos",
+      text:
+        "Sua atuação ajudou a movimentar propostas que permaneciam sem avanço, com reuniões e articulação junto a parlamentares de diferentes partidos.",
+    },
+    {
+      title: "Cresceu 73% na capital em 2024",
+      text:
+        "Sem mandato e sem máquina política, ampliou em 73% sua votação na cidade de São Paulo em relação a 2022 — reflexo de presença e trabalho contínuo.",
+    },
+  ],
+};
+
+export const actionPhotos = [
+  {
+    src: "articulacao-pl-celiacos",
+    caption: "Articulação do PL dos Celíacos junto a parlamentares em Brasília.",
+  },
+  {
+    src: "entrega-pl-celiacos",
+    caption: "Apresentação da pauta das restrições alimentares no Congresso Nacional.",
+  },
+  {
+    src: "reuniao-congresso",
+    caption: "Reunião de trabalho para destravar propostas paradas há anos.",
+  },
+  {
+    src: "dialogo-lideranca",
+    caption: "Diálogo com lideranças para transformar demandas reais em projeto.",
+  },
+  {
+    src: "apoio-lideranca",
+    caption: "Construção de apoios para a agenda de saúde e inclusão.",
+  },
 ];
