@@ -4,7 +4,7 @@ import { territory } from "@/content/eduardo";
 
 export function Territory() {
   return (
-    <section id="territorio" className="bg-surface py-24 md:py-32">
+    <section id="territorio" className="bg-surface-strong py-24 md:py-32">
       <div className="mx-auto max-w-[1240px] px-5 md:px-8">
         <div className="reveal max-w-3xl">
           <p className="eyebrow text-royal">{territory.eyebrow}</p>
