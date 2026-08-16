@@ -34,7 +34,7 @@ export function ActionGallery() {
             <figure
               key={photo.src}
               className={`reveal group relative overflow-hidden bg-white/5 ${
-                i === 0 ? "sm:col-span-2 aspect-video" : "aspect-square"
+                i === 0 ? "sm:col-span-2 sm:aspect-auto" : ""
               }`}
               style={{ transitionDelay: `${i * 90}ms` }}
             >
@@ -42,9 +42,9 @@ export function ActionGallery() {
                 src={images[photo.src]}
                 alt={photo.caption}
                 loading="lazy"
-                className="size-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/70 to-transparent p-5 pt-16 text-sm leading-snug text-white/85">
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy via-navy/70 to-transparent p-5 pt-12 text-sm leading-snug text-white/85">
                 {photo.caption}
               </figcaption>
             </figure>
