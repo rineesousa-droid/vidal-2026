@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
-import logo from "@/assets/logo-eduardo-vidal-horizontal.png";
+import logo from "@/assets/logo-cabecalho-eduardo-v2.png";
 import { nav } from "@/content/eduardo";
 
 export function SiteHeader() {
@@ -39,8 +39,8 @@ export function SiteHeader() {
             alt="Eduardo Vidal 2023"
             className={`w-auto object-contain transition-all duration-300 ${
               scrolled
-                ? "h-10 max-w-[260px] md:h-12 md:max-w-[320px]"
-                : "h-12 max-w-[300px] md:h-14 md:max-w-[380px]"
+                ? "h-10 max-w-[300px] md:h-12 md:max-w-[360px]"
+                : "h-12 max-w-[340px] md:h-14 md:max-w-[420px]"
             }`}
           />
         </a>
