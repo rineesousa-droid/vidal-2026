@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-import retrato from "@/assets/eduardo-vidal-retrato-2.webp";
+import retrato from "@/assets/eduardo-vidal-retrato-3.webp";
 import { candidate } from "@/content/eduardo";
 
 export function Hero() {
