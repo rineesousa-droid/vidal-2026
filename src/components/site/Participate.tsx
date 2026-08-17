@@ -1,12 +1,13 @@
 import { ArrowUpRight, Vote } from "lucide-react";
 
+import participeFoto from "@/assets/eduardo-participe.webp";
 import { candidate, socials } from "@/content/eduardo";
 
 export function Participate() {
   return (
     <section id="participe" className="bg-navy py-24 text-white md:py-32">
       <div className="mx-auto max-w-[1240px] px-5 md:px-8">
-        <div className="grid items-center gap-14 lg:grid-cols-[1.15fr_.85fr]">
+        <div className="grid items-center gap-14 lg:grid-cols-[1fr_.55fr_.45fr]">
           <div className="reveal">
             <p className="eyebrow text-brand-yellow">Participe</p>
 
@@ -38,6 +39,18 @@ export function Participate() {
               </a>
             </div>
           </div>
+
+          <figure
+            className="reveal relative aspect-[3/4] overflow-hidden bg-white/5"
+            style={{ transitionDelay: "80ms" }}
+          >
+            <img
+              src={participeFoto}
+              alt="Eduardo Vidal sentado, sorrindo, de camisa branca"
+              loading="lazy"
+              className="absolute inset-0 h-full w-full object-cover object-top"
+            />
+          </figure>
 
           <div
             className="reveal border border-white/15 bg-white/[0.04] p-10 text-center"
