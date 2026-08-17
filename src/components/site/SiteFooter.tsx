@@ -7,7 +7,7 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1240px] px-5 md:px-8">
         <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
-            <img src={logo} alt="Eduardo Vidal 2023" className="h-16 w-auto object-contain" />
+            <img src={logo} alt="Eduardo Vidal 2023" className="h-14 w-auto object-contain md:h-16" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
               {candidate.office} · {candidate.state} · {candidate.election}. Trabalho antes do
               mandato: escutar o território, montar o projeto e cobrar até a entrega.
