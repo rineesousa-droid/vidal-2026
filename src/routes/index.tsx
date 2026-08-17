@@ -12,6 +12,7 @@ import { Results } from "@/components/site/Results";
 import { Manifesto } from "@/components/site/Manifesto";
 import { Faq } from "@/components/site/Faq";
 import { Participate } from "@/components/site/Participate";
+import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { useReveal } from "@/hooks/useReveal";
 import { faq } from "@/content/eduardo";
@@ -78,6 +79,7 @@ function Index() {
         <Participate />
       </main>
       <SiteFooter />
+      <WhatsAppFloat />
     </div>
   );
 }

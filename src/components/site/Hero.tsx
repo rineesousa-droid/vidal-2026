@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-import retrato from "@/assets/eduardo-vidal-retrato.webp";
+import retrato from "@/assets/eduardo-vidal-retrato-2.webp";
 import { candidate } from "@/content/eduardo";
 
 export function Hero() {
@@ -59,8 +59,8 @@ export function Hero() {
           <img
             src={retrato}
             alt="Eduardo Vidal, candidato a Deputado Federal por São Paulo"
-            width={760}
-            height={1000}
+            width={845}
+            height={1400}
             fetchPriority="high"
             className="relative z-10 max-h-[560px] w-auto object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.45)] lg:max-h-[640px]"
           />
