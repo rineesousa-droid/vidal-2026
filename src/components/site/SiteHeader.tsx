@@ -39,8 +39,8 @@ export function SiteHeader() {
             alt="Eduardo Vidal 2023"
             className={`w-auto object-contain transition-all duration-300 ${
               scrolled
-                ? "h-10 max-w-[300px] md:h-12 md:max-w-[360px]"
-                : "h-12 max-w-[340px] md:h-14 md:max-w-[420px]"
+                ? "h-12 max-w-[280px] md:h-14 md:max-w-[340px]"
+                : "h-14 max-w-[320px] md:h-16 md:max-w-[400px]"
             }`}
           />
         </a>
