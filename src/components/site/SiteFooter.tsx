@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-eduardo-vidal-branca.png";
+import logo from "@/assets/logo-eduardo-vidal-nova-branca.png";
 import { candidate, nav } from "@/content/eduardo";
 
 export function SiteFooter() {
