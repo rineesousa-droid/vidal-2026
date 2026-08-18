@@ -1,6 +1,6 @@
 import { ArrowUpRight, Vote } from "lucide-react";
 
-import participeFoto from "@/assets/eduardo-participe.webp";
+import eduardoCard from "@/assets/eduardo-card-2023.webp";
 import { candidate, socials } from "@/content/eduardo";
 
 export function Participate() {
@@ -48,42 +48,42 @@ export function Participate() {
             </div>
           </div>
 
-          {/* FOTO + CARD */}
+          {/* CARD ELEITORAL COM FOTO INTEGRADA */}
           <div
-            className="reveal relative mx-auto min-h-[520px] w-full max-w-[620px]"
+            className="reveal relative mx-auto w-full max-w-[620px]"
             style={{ transitionDelay: "120ms" }}
           >
-            {/* ELEMENTO DECORATIVO */}
-            <div className="absolute bottom-4 right-0 h-[420px] w-[75%] border border-white/15 bg-white/[0.04]" />
+            <div className="relative overflow-hidden rounded-sm border border-white/15 bg-royal/40 pt-16 sm:pt-0">
+              {/* FOTO INTEGRADA */}
+              <img
+                src={eduardoCard}
+                alt="Eduardo Vidal"
+                loading="lazy"
+                className="pointer-events-none absolute bottom-0 left-1/2 h-[300px] w-auto -translate-x-1/2 object-contain object-bottom opacity-25 sm:left-0 sm:h-[105%] sm:translate-x-0 sm:opacity-90"
+              />
 
-            {/* CARD 2023 */}
-            <div className="absolute bottom-12 right-0 z-10 w-[63%] px-6 py-10 text-center md:px-8">
-              <Vote className="mx-auto size-8 text-brand-yellow" />
+              {/* OVERLAY PARA CONTRASTE */}
+              <div className="absolute inset-0 bg-gradient-to-r from-navy/70 via-navy/50 to-navy/85 sm:from-navy/30 sm:via-navy/70 sm:to-navy/90" />
 
-              <p className="eyebrow mt-6 text-white/60">
-                Nas urnas em 2026
-              </p>
+              {/* CONTEÚDO ELEITORAL */}
+              <div className="relative z-10 px-6 py-12 text-center sm:ml-auto sm:w-[58%] sm:px-8 sm:py-16 sm:text-left">
+                <Vote className="mx-auto size-8 text-brand-yellow sm:mx-0" />
 
-              <p className="mt-4 font-display text-[4.5rem] font-black leading-none tracking-tight text-brand-yellow md:text-[5.5rem]">
-                {candidate.number}
-              </p>
+                <p className="eyebrow mt-6 text-white/70">Nas urnas em 2026</p>
 
-              <p className="mt-4 font-display text-lg font-bold uppercase tracking-widest">
-                {candidate.name}
-              </p>
+                <p className="mt-3 font-display text-[5rem] font-black leading-none tracking-tight text-brand-yellow drop-shadow-[0_6px_18px_rgba(0,0,0,0.45)] md:text-[6rem]">
+                  {candidate.number}
+                </p>
 
-              <p className="mt-1 text-sm text-white/60">
-                {candidate.office} · {candidate.state}
-              </p>
+                <p className="mt-4 font-display text-lg font-bold uppercase tracking-widest">
+                  {candidate.name}
+                </p>
+
+                <p className="mt-1 text-sm text-white/70">
+                  {candidate.office} · {candidate.state}
+                </p>
+              </div>
             </div>
-
-            {/* FOTO DO EDUARDO */}
-            <img
-              src={participeFoto}
-              alt="Eduardo Vidal"
-              loading="lazy"
-              className="absolute bottom-0 left-0 z-20 h-[470px] w-auto max-w-[62%] object-contain object-bottom drop-shadow-[0_25px_35px_rgba(0,0,0,0.35)] md:h-[510px]"
-            />
           </div>
         </div>
       </div>
